@@ -59,7 +59,7 @@ app.param('collectionName', function (req, res, next, collectionName) {
   return next();
 });
 
-// y
+// get collection by name
 app.get("/collections/:collectionName", async (req, res) => {
   try {
     await client.connect();
