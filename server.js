@@ -71,6 +71,7 @@ app.get("/collections/:collectionName", async (req, res) => {
     res.status(500).json({ msg: "Server error" });
   }
 });
+//get collectionName by id
 app.get("/collections/:collectionName/:id", async (req, res) => {
   try {
   
